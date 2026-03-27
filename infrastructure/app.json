@@ -1,0 +1,39 @@
+{
+  "repo_data": {
+    "full_name": "RiddhiSinha123/DSA",
+    "stargazers_count": 150,
+    "open_issues_count": 10,
+    "license": {
+      "key": "mit",
+      "name": "MIT License"
+    }
+  },
+  "contributors": [
+    {
+      "login": "RiddhiSinha123",
+      "contributions": 100
+    },
+    {
+      "login": "dev-peer",
+      "contributions": 50
+    },
+    {
+      "login": "bot-account",
+      "contributions": 10}
+  ],
+  "commits": [
+    { "sha": "sha_0" }, { "sha": "sha_1" }, { "sha": "sha_2" }, { "sha": "sha_3" },
+    { "sha": "sha_4" }, { "sha": "sha_5" }, { "sha": "sha_6" }, { "sha": "sha_7" },
+    { "sha": "sha_8" }, { "sha": "sha_9" }, { "sha": "sha_10" }, { "sha": "sha_11" },
+    { "sha": "sha_12" }, { "sha": "sha_13" }, { "sha": "sha_14" }, { "sha": "sha_15" },
+    { "sha": "sha_16" }, { "sha": "sha_17" }, { "sha": "sha_18" }, { "sha": "sha_19" },
+    { "sha": "sha_20" }, { "sha": "sha_21" }, { "sha": "sha_22" }, { "sha": "sha_23" },
+    { "sha": "sha_24" }
+  ],
+  "ci_runs": [
+    { "conclusion": "success" },
+    { "conclusion": "success" },
+    { "conclusion": "failure" },
+    { "conclusion": "success" }
+  ]
+}
