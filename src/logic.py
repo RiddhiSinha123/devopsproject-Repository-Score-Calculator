@@ -18,7 +18,7 @@ def calculate_scorecard(repo_data: dict, contributors: list, commits: list, ci_r
     metrics = []
     
     # --- 1. Community Metric (Max 25) ---
-    # We look at stars AND contributor diversity (Bus Factor)
+    # stars AND contributor diversity (Bus Factor)
     stars = repo_data.get("stargazers_count", 0)
     contributor_count = len(contributors)
     
@@ -36,7 +36,7 @@ def calculate_scorecard(repo_data: dict, contributors: list, commits: list, ci_r
     ))
 
     # --- 2. Automation Metric (Max 25) ---
-    # We look at CI presence and recent Success Rate
+    # CI presence and recent Success Rate
     auto_score = 0
     if ci_runs:
         success_rate = len([r for r in ci_runs if r.get("conclusion") == "success"]) / len(ci_runs)
@@ -51,7 +51,7 @@ def calculate_scorecard(repo_data: dict, contributors: list, commits: list, ci_r
     ))
 
     # --- 3. Activity Metric (Max 25) ---
-    # We look at commit frequency in the last 30 days
+    # commit frequency in the last 30 days
     commit_count = len(commits)
     act_score = 25 if commit_count >= 20 else 15 if commit_count >= 5 else 5
     
@@ -64,7 +64,7 @@ def calculate_scorecard(repo_data: dict, contributors: list, commits: list, ci_r
     ))
 
     # --- 4. Maintenance Metric (Max 25) ---
-    # We check for a License and Issue Backlog
+    # License and Issue Backlog
     maint_score = 0
     if repo_data.get("license"): maint_score += 10
     
