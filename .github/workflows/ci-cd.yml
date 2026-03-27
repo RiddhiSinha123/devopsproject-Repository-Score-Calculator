@@ -28,7 +28,7 @@ jobs:
 
       - name: Verify Docker Build
         # Note the specific path to your Dockerfile
-        run: docker build -t policy-api-test -f infrastructure/docker/Dockerfile .
+        run: docker build -t api-test -f infrastructure/docker/Dockerfile .
 
       - name: Validate Docker Compose Configuration
         # Verifies the YAML syntax of your orchestration file
